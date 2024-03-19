@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDocker.Console", "AspNetCoreDocker.Console\AspNetCoreDocker.Console.csproj", "{1EE236AA-6D05-4587-AB01-0C883CDDB993}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDocker.Console", "AspNetCoreDocker.Console\AspNetCoreDocker.Console.csproj", "{1EE236AA-6D05-4587-AB01-0C883CDDB993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDocker.API", "AspNetCoreDocker.API\AspNetCoreDocker.API.csproj", "{D31C86AA-CEB9-4898-B561-DF6AEA64487D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1EE236AA-6D05-4587-AB01-0C883CDDB993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE236AA-6D05-4587-AB01-0C883CDDB993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE236AA-6D05-4587-AB01-0C883CDDB993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31C86AA-CEB9-4898-B561-DF6AEA64487D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31C86AA-CEB9-4898-B561-DF6AEA64487D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31C86AA-CEB9-4898-B561-DF6AEA64487D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31C86AA-CEB9-4898-B561-DF6AEA64487D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
