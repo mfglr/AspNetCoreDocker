@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+    microservice1.API:
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+        ports:
+            - "80"
+    microservice2.API:
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+        ports:
+            - "80"
+    sqlserver:
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=Pasword123*
+            - MSSQL_PID=Evaluation
+        volumes:
+            - sqlserver_volume:/var/opt/mssql
+        ports:
+            - "1433:1433"

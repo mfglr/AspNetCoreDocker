@@ -1,4 +1,4 @@
-namespace AspNetCoreDocker.API
+namespace microservice1.API
 {
     public class WeatherForecast
     {

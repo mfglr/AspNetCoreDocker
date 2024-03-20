@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCoreDocker.API.Controllers
+namespace microservice2.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -19,9 +19,15 @@ namespace AspNetCoreDocker.API.Controllers
         }
 
         [HttpGet]
-        public string Get()
+        public IEnumerable<WeatherForecast> Get()
         {
-            return "Merhaba dunya";
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
         }
     }
 }
